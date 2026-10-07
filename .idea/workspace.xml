@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c81352ef-f2f6-4986-8252-73e101c22799" name="Changes" comment="" />
+    <list default="true" id="c81352ef-f2f6-4986-8252-73e101c22799" name="Changes" comment="Initial commit: implement AbstractDoubleList and core data structures">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sklady/gui/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sklady/gui/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sklady/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sklady/gui/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,15 +19,30 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rick000s&quot;
+  }
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="ee23109b-2f39-492d-8fb5-1a7083c9d771" />
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rick000s/Sklady.git&quot;,
+    &quot;accountId&quot;: &quot;ee23109b-2f39-492d-8fb5-1a7083c9d771&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -31,23 +52,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0000000000002904" />
-      <entry key="M30" value="1.0000009334151592" />
-      <entry key="H1" value="1.0016747639994572" />
-      <entry key="H2" value="1.0749099887816271" />
-      <entry key="H4" value="1.6817691918332565" />
-      <entry key="D1" value="31.219522833299663" />
-      <entry key="W1" value="234.61116430078678" />
+      <entry key="MS100" value="1.000000000000001" />
+      <entry key="MS500" value="1.001622220966433" />
+      <entry key="S2" value="1.3354638863105768" />
+      <entry key="S5" value="1.978726029941794" />
+      <entry key="S10" value="2.3989741002265292" />
+      <entry key="S30" value="2.7753415242853476" />
+      <entry key="S60" value="2.8843213353777175" />
+      <entry key="M2" value="2.9415830347322705" />
+      <entry key="M5" value="3.039314620054824" />
+      <entry key="M10" value="3.436969413004864" />
+      <entry key="M15" value="3.918056185041115" />
+      <entry key="M30" value="5.040017132168992" />
+      <entry key="H1" value="6.146687692360995" />
+      <entry key="H2" value="6.999586193133986" />
+      <entry key="H4" value="7.995349130893369" />
+      <entry key="D1" value="37.11235707365814" />
+      <entry key="W1" value="240.46717053444445" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -56,36 +77,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="6.561868115300412E-196" />
-      <entry key="M2" value="2.5616143572560667E-98" />
-      <entry key="M5" value="9.191904413501916E-40" />
-      <entry key="M10" value="3.031815365998054E-20" />
-      <entry key="M15" value="9.723034643495402E-14" />
-      <entry key="M30" value="3.1181787213981036E-7" />
-      <entry key="H1" value="5.58965039672512E-4" />
-      <entry key="H2" value="0.025301565589080473" />
-      <entry key="H4" value="0.24516320238125203" />
-      <entry key="D1" value="8.996778050520362" />
-      <entry key="W1" value="58.267075958032926" />
+      <entry key="S60" value="3.940594385625257E-217" />
+      <entry key="M2" value="6.277415380254245E-109" />
+      <entry key="M5" value="5.237359033503865E-44" />
+      <entry key="M10" value="2.288527699964295E-22" />
+      <entry key="M15" value="3.74142848991914E-15" />
+      <entry key="M30" value="6.116722969654232E-8" />
+      <entry key="H1" value="2.475674536972764E-4" />
+      <entry key="H2" value="0.0168384397342703" />
+      <entry key="H4" value="0.2000011586180775" />
+      <entry key="D1" value="8.696607658416328" />
+      <entry key="W1" value="57.985301559608686" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8888426811665702" />
-      <entry key="MS500" value="0.9767085289622274" />
-      <entry key="S2" value="0.9941255712940557" />
-      <entry key="S5" value="0.9976460744242679" />
-      <entry key="S10" value="0.9988223437750419" />
-      <entry key="S30" value="0.9996072937269845" />
-      <entry key="S60" value="0.9998036275824291" />
-      <entry key="M2" value="0.9999018089704754" />
-      <entry key="M5" value="0.9999607224311522" />
-      <entry key="M10" value="0.9999803610227314" />
-      <entry key="M15" value="0.99998690730602" />
-      <entry key="M30" value="0.9999946983526797" />
-      <entry key="H1" value="1.0022299969244963" />
-      <entry key="H2" value="1.1001997277352757" />
-      <entry key="H4" value="1.9268868356807147" />
-      <entry key="D1" value="40.21594761541817" />
-      <entry key="W1" value="292.87785487293525" />
+      <entry key="MS100" value="3.970426472213138E-15" />
+      <entry key="MS500" value="0.002117325546154614" />
+      <entry key="S2" value="0.4659512750726879" />
+      <entry key="S5" value="1.418083065173247" />
+      <entry key="S10" value="2.0610474960739307" />
+      <entry key="S30" value="2.6466988955693265" />
+      <entry key="S60" value="2.8177589662678457" />
+      <entry key="M2" value="2.907721672829898" />
+      <entry key="M5" value="3.025625002837302" />
+      <entry key="M10" value="3.430091201556761" />
+      <entry key="M15" value="3.9134577851496894" />
+      <entry key="M30" value="5.037706694544986" />
+      <entry key="H1" value="6.145774986215387" />
+      <entry key="H2" value="7.015836160449767" />
+      <entry key="H4" value="8.195022453814207" />
+      <entry key="D1" value="45.8085747495747" />
+      <entry key="W1" value="298.4520816417744" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -93,30 +114,69 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3JsLiNxy25ZgGgQ7kpEz3r1d336" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/_Rick_000_/IdeaProjects/Sklady/src/main/java/com/example/sklady&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\_Rick_000_\IdeaProjects\Sklady\src\main\java\com\example\sklady" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\_Rick_000_\IdeaProjects\Sklady\src\main\resources\com\example\sklady\gui" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.sklady.gui.HelloApplication" />
+      <module name="Sklady" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sklady.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -137,5 +197,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit: implement AbstractDoubleList and core data structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: implement AbstractDoubleList and core data structures" />
   </component>
 </project>
