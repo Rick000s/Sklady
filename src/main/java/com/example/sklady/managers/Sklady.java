@@ -60,7 +60,7 @@ public class Sklady {
                 }
             }
         } catch (IOException e) {
-            System.err.println("Помилка читання файлу: " + e.getMessage());
+            System.err.println("erore write file: " + e.getMessage());
         }
         return count;
     }
