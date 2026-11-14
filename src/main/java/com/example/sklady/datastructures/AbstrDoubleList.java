@@ -2,7 +2,7 @@ package com.example.sklady.datastructures;
 
 import java.util.Iterator;
 
-public class AbstractDoubleList<T> implements IAbstrDoubleList<T> {
+public class AbstrDoubleList<T> implements IAbstrDoubleList<T> {
 
         private static class Node<T> {          //статичний бо незалежна ячейка повинна бути і це швидше
                 T data;
@@ -20,7 +20,7 @@ public class AbstractDoubleList<T> implements IAbstrDoubleList<T> {
         private Node<T> current;
         private Node<T> last;
 
-        public AbstractDoubleList() {
+        public AbstrDoubleList() {
                 this.first = null;
                 this.current = null;
                 this.last = null;

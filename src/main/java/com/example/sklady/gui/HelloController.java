@@ -220,9 +220,10 @@ public class HelloController {
 
         Optional<enumSklad> targetSklad = dialog.showAndWait();
         if (targetSklad.isPresent() && targetSklad.get() != currentSklad) {
-            skladyManager.synchronizujAktualniPodleId(currentSklad, selected.getId());
-
-            skladyManager.presunProdukt(currentSklad, targetSklad.get());
+            // переміщуємо лише тоді, коли current справді став на вибраний продукт
+            if (skladyManager.synchronizujAktualniPodleId(currentSklad, selected.getId())) {
+                skladyManager.presunProdukt(currentSklad, targetSklad.get());
+            }
             onSkladSelected();
         }
     }

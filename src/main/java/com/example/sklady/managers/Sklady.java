@@ -1,6 +1,6 @@
 package com.example.sklady.managers;
 
-import com.example.sklady.datastructures.AbstractDoubleList;
+import com.example.sklady.datastructures.AbstrDoubleList;
 import com.example.sklady.enums.enumPozice;
 import com.example.sklady.enums.enumSklad;
 import com.example.sklady.models.Produkt;
@@ -13,13 +13,13 @@ import java.util.List;
 
 public class Sklady {
 
-    private final AbstractDoubleList<Produkt>[] sklady;
+    private final AbstrDoubleList<Produkt>[] sklady;
 
     public Sklady() {
         int pocetSkladu = enumSklad.values().length;
-        sklady = new AbstractDoubleList[pocetSkladu];
+        sklady = new AbstrDoubleList[pocetSkladu];
         for (int i = 0; i < pocetSkladu; i++) {
-            sklady[i] = new AbstractDoubleList<>();
+            sklady[i] = new AbstrDoubleList<>();
         }
     }
 
@@ -70,7 +70,7 @@ public class Sklady {
         int index = sklad.ordinal();
         if (index < 0 || index >= sklady.length) return;
 
-        AbstractDoubleList<Produkt> list = sklady[index];
+        AbstrDoubleList<Produkt> list = sklady[index];
         switch (pozice) {
             case PRVNI:
                 list.vlozPrvni(produkt);
@@ -95,7 +95,7 @@ public class Sklady {
         int index = sklad.ordinal();
         if (index < 0 || index >= sklady.length) return null;
 
-        AbstractDoubleList<Produkt> list = sklady[index];
+        AbstrDoubleList<Produkt> list = sklady[index];
         switch (pozice) {
             case PRVNI:
                 return list.zpristupniPrvni();
@@ -113,18 +113,10 @@ public class Sklady {
     }
 
     public boolean odeberProduktPodleId(enumSklad sklad, String id) {
-        if (sklad == null || id == null) return false;
-        int index = sklad.ordinal();
-        if (index < 0 || index >= sklady.length) return false;
-
-        AbstractDoubleList<Produkt> list = sklady[index];
-        for (Produkt p : list) {
-            if (p.getId().equals(id)) {
-                list.odeberAktualni();
-                return true;
-            }
-        }
-        return false;
+        // спершу ставимо current на потрібний продукт, і тільки тоді видаляємо current
+        if (!synchronizujAktualniPodleId(sklad, id)) return false;
+        sklady[sklad.ordinal()].odeberAktualni();
+        return true;
     }
 
     public Produkt odeberProdukt(enumPozice pozice, enumSklad sklad) {
@@ -132,7 +124,7 @@ public class Sklady {
         int index = sklad.ordinal();
         if (index < 0 || index >= sklady.length) return null;
 
-        AbstractDoubleList<Produkt> list = sklady[index];
+        AbstrDoubleList<Produkt> list = sklady[index];
         switch (pozice) {
             case PRVNI:
                 return list.odeberPrvni();
@@ -149,17 +141,22 @@ public class Sklady {
         }
     }
 
-    public void synchronizujAktualniPodleId(enumSklad sklad, String id) {
-        if (sklad == null || id == null) return;
+    // ставить current списку на продукт із заданим ID; повертає false, якщо такого немає
+    public boolean synchronizujAktualniPodleId(enumSklad sklad, String id) {
+        if (sklad == null || id == null) return false;
         int index = sklad.ordinal();
-        if (index < 0 || index >= sklady.length) return;
+        if (index < 0 || index >= sklady.length) return false;
 
-        AbstractDoubleList<Produkt> list = sklady[index];
-        for (Produkt p : list) {
+        AbstrDoubleList<Produkt> list = sklady[index];
+        // йдемо методами списку, а не ітератором: вони пересувають current, ітератор - ні
+        Produkt p = list.zpristupniPrvni();
+        while (p != null) {
             if (p.getId().equals(id)) {
-                break;
+                return true; // current уже стоїть на знайденому продукті
             }
+            p = list.zpristupniNaslednika(); // у кінці списку поверне null
         }
+        return false;
     }
 
     public void presunProdukt(enumSklad zdroj, enumSklad cil) {
@@ -169,8 +166,8 @@ public class Sklady {
 
         if (zdrojIndex < 0 || zdrojIndex >= sklady.length || cilIndex < 0 || cilIndex >= sklady.length) return;
 
-        AbstractDoubleList<Produkt> sourceList = sklady[zdrojIndex];
-        AbstractDoubleList<Produkt> targetList = sklady[cilIndex];
+        AbstrDoubleList<Produkt> sourceList = sklady[zdrojIndex];
+        AbstrDoubleList<Produkt> targetList = sklady[cilIndex];
 
         Produkt currentProduct = sourceList.zpristupniAktualni();
         if (currentProduct != null) {
