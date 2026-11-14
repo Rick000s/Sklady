@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c81352ef-f2f6-4986-8252-73e101c22799" name="Changes" comment="Initial commit: front">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sklady/managers/Sklady.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sklady/managers/Sklady.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +50,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000294780373817" />
-      <entry key="MS500" value="1.1241365619296295" />
-      <entry key="S2" value="1.5935740802844283" />
-      <entry key="S5" value="1.8116895809772786" />
-      <entry key="S10" value="1.9009381671220722" />
-      <entry key="S30" value="1.9658247460297513" />
-      <entry key="S60" value="1.9827638302414061" />
-      <entry key="M2" value="1.9913456962463556" />
-      <entry key="M5" value="2.005094405842895" />
-      <entry key="M10" value="2.180723062670651" />
-      <entry key="M15" value="2.5522753249917853" />
-      <entry key="M30" value="3.8936366295116533" />
-      <entry key="H1" value="5.767961871758468" />
-      <entry key="H2" value="7.480374762706888" />
-      <entry key="H4" value="9.074694194142621" />
-      <entry key="D1" value="38.36337418277177" />
-      <entry key="W1" value="241.76782391522838" />
+      <entry key="MS100" value="1.5797251893220894" />
+      <entry key="MS500" value="2.9248625148364273" />
+      <entry key="S2" value="6.430187400559339" />
+      <entry key="S5" value="10.079654763089694" />
+      <entry key="S10" value="12.17577842654042" />
+      <entry key="S30" value="13.96245373102214" />
+      <entry key="S60" value="14.468315998222796" />
+      <entry key="M2" value="14.751785352798388" />
+      <entry key="M5" value="15.62835669084709" />
+      <entry key="M10" value="19.520163583486102" />
+      <entry key="M15" value="23.994571206250725" />
+      <entry key="M30" value="33.647940218780775" />
+      <entry key="H1" value="42.82995635524937" />
+      <entry key="H2" value="49.674283213868215" />
+      <entry key="H4" value="54.37232685760944" />
+      <entry key="D1" value="86.26296873141632" />
+      <entry key="W1" value="290.1504791147951" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -74,36 +75,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="7.006263061241012E-230" />
-      <entry key="M2" value="2.646934653753471E-115" />
-      <entry key="M5" value="1.4760371487815261E-46" />
-      <entry key="M10" value="1.2149226925123783E-23" />
-      <entry key="M15" value="5.284847129065967E-16" />
-      <entry key="M30" value="2.298879998215598E-8" />
-      <entry key="H1" value="1.5177222288432417E-4" />
-      <entry key="H2" value="0.013184122191125497" />
-      <entry key="H4" value="0.1769730753208057" />
-      <entry key="D1" value="8.52109993384673" />
-      <entry key="W1" value="57.81666430029294" />
+      <entry key="S60" value="8.985358751756628E-240" />
+      <entry key="M2" value="2.9975587987154854E-120" />
+      <entry key="M5" value="1.551340334898448E-48" />
+      <entry key="M10" value="1.245528134928492E-24" />
+      <entry key="M15" value="1.157628014433712E-16" />
+      <entry key="M30" value="1.0759314467864018E-8" />
+      <entry key="H1" value="1.0383085843940149E-4" />
+      <entry key="H2" value="0.010904814801799705" />
+      <entry key="H4" value="0.16094990892086136" />
+      <entry key="D1" value="8.387378620128434" />
+      <entry key="W1" value="57.68616758938059" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9460849607231218" />
-      <entry key="MS500" value="1.111228850561849" />
-      <entry key="S2" value="1.588546751474141" />
-      <entry key="S5" value="1.8093443387518968" />
-      <entry key="S10" value="1.899697133881557" />
-      <entry key="S30" value="1.965394486864175" />
-      <entry key="S60" value="1.9825465361600063" />
-      <entry key="M2" value="1.9912364866937153" />
-      <entry key="M5" value="2.005012013991625" />
-      <entry key="M10" value="2.180335987992719" />
-      <entry key="M15" value="2.5516111680116818" />
-      <entry key="M30" value="3.8927609715648552" />
-      <entry key="H1" value="5.7673986759264615" />
-      <entry key="H2" value="7.49309629515495" />
-      <entry key="H4" value="9.25137626615561" />
-      <entry key="D1" value="46.88409185199505" />
-      <entry key="W1" value="299.58409887701015" />
+      <entry key="MS100" value="1.4752617123628347" />
+      <entry key="MS500" value="2.863991433792051" />
+      <entry key="S2" value="6.40002560979787" />
+      <entry key="S5" value="10.060895944022905" />
+      <entry key="S10" value="12.164416603088869" />
+      <entry key="S30" value="13.958096531599946" />
+      <entry key="S60" value="14.46605593332916" />
+      <entry key="M2" value="14.7506151789872" />
+      <entry key="M5" value="15.627659623529599" />
+      <entry key="M10" value="19.519262235026385" />
+      <entry key="M15" value="23.993482023096732" />
+      <entry key="M30" value="33.646693600398464" />
+      <entry key="H1" value="42.82900180860979" />
+      <entry key="H2" value="49.684472026230516" />
+      <entry key="H4" value="54.53283153811598" />
+      <entry key="D1" value="94.6499389023101" />
+      <entry key="W1" value="347.83625359344103" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -118,34 +119,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/_Rick_000_/IdeaProjects/Sklady/src/main/java/com/example/sklady&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Debug",
+    "Application.Launcher.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "semB",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/_Rick_000_/IdeaProjects/Sklady/src/main/java/com/example/sklady",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\_Rick_000_\IdeaProjects\Sklady\src\main\java\com\example\sklady" />
@@ -153,26 +154,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\_Rick_000_\IdeaProjects\Sklady\src\main\resources\com\example\sklady\gui" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.sklady.gui.HelloApplication" />
-      <module name="Sklady" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.sklady.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.HelloApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
