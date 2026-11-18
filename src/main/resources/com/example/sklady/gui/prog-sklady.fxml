@@ -58,6 +58,7 @@
     <Button text="Strom do hloubky" onAction="#onHloubkaClick" style="-fx-cursor: hand;" />
     <Button text="Strom do šířky" onAction="#onSirkaClick" style="-fx-cursor: hand;" />
     <Button text="Vybuduj" onAction="#onVybudujClick" style="-fx-cursor: hand;" />
+    <Button text="Zobrazit strom" onAction="#onZobrazStromClick" style="-fx-cursor: hand;" />
   </HBox>
 
   <Label fx:id="lblDetail" text="Produkt: -" />

@@ -132,6 +132,10 @@ public class AgendaSklady {
         return tabulka.vytvorIterator(typ);
     }
 
+    public void projdiStrom(AbstrTable.Navstevnik<String> navstevnik) {
+        tabulka.projdiStrom(navstevnik);
+    }
+
     public int generuj(int kolik) {
         enumSklad[] vsechnySklady = enumSklad.values();
         int vlozeno = 0;

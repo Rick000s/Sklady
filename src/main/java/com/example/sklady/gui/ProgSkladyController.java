@@ -70,6 +70,7 @@ public class ProgSkladyController {
 
     private Runnable posledniZobrazeni = this::zobrazVse;
     private String popisZobrazeni = "Všechny sklady";
+    private StromOkno stromOkno;
 
     @FXML
     public void initialize() {
@@ -137,6 +138,10 @@ public class ProgSkladyController {
             text = text + " | " + zprava;
         }
         lblStav.setText(text);
+
+        if (stromOkno != null && stromOkno.jeOtevrene()) {
+            stromOkno.prekresli();
+        }
     }
 
     private String popisProduktu(Produkt p) {
@@ -469,6 +474,14 @@ public class ProgSkladyController {
 
         comboSklady.setValue(null);
         nastavZobrazeni(() -> zobrazStrom(eTypProhl.SIRKA), "strom vybudován, výška: " + vyskaPred + " → " + vyskaPo);
+    }
+
+    @FXML
+    protected void onZobrazStromClick() {
+        if (stromOkno == null) {
+            stromOkno = new StromOkno(agenda, () -> obnov(null));
+        }
+        stromOkno.zobraz();
     }
 
     private void highlightProduct(Produkt p) {

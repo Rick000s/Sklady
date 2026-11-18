@@ -194,6 +194,37 @@ public class AbstrTable<K extends Comparable<K>, V> implements IAbstrTable<K, V>
         return vyska;
     }
 
+    public interface Navstevnik<K> {
+        void navstiv(K klic, K levy, K pravy, int hloubka);
+    }
+
+    public void projdiStrom(Navstevnik<K> navstevnik) {
+        if (root == null) return;
+
+        AbstrFIFO<Node<K, V>> fronta = new AbstrFIFO<>();
+        AbstrFIFO<Integer> hloubky = new AbstrFIFO<>();
+        fronta.vloz(root);
+        hloubky.vloz(0);
+
+        while (!fronta.jePrazdny()) {
+            Node<K, V> uzel = fronta.odeber();
+            int hloubka = hloubky.odeber();
+
+            K levy = uzel.left == null ? null : uzel.left.key;
+            K pravy = uzel.right == null ? null : uzel.right.key;
+            navstevnik.navstiv(uzel.key, levy, pravy, hloubka);
+
+            if (uzel.left != null) {
+                fronta.vloz(uzel.left);
+                hloubky.vloz(hloubka + 1);
+            }
+            if (uzel.right != null) {
+                fronta.vloz(uzel.right);
+                hloubky.vloz(hloubka + 1);
+            }
+        }
+    }
+
     @Override
     public Iterator<V> vytvorIterator(eTypProhl typ) {
         if (typ == eTypProhl.SIRKA) return new IteratorSirka();
