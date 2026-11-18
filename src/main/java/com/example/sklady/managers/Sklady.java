@@ -113,7 +113,6 @@ public class Sklady {
     }
 
     public boolean odeberProduktPodleId(enumSklad sklad, String id) {
-        // спершу ставимо current на потрібний продукт, і тільки тоді видаляємо current
         if (!synchronizujAktualniPodleId(sklad, id)) return false;
         sklady[sklad.ordinal()].odeberAktualni();
         return true;
@@ -141,20 +140,18 @@ public class Sklady {
         }
     }
 
-    // ставить current списку на продукт із заданим ID; повертає false, якщо такого немає
     public boolean synchronizujAktualniPodleId(enumSklad sklad, String id) {
         if (sklad == null || id == null) return false;
         int index = sklad.ordinal();
         if (index < 0 || index >= sklady.length) return false;
 
         AbstrDoubleList<Produkt> list = sklady[index];
-        // йдемо методами списку, а не ітератором: вони пересувають current, ітератор - ні
         Produkt p = list.zpristupniPrvni();
         while (p != null) {
             if (p.getId().equals(id)) {
-                return true; // current уже стоїть на знайденому продукті
+                return true;
             }
-            p = list.zpristupniNaslednika(); // у кінці списку поверне null
+            p = list.zpristupniNaslednika();
         }
         return false;
     }

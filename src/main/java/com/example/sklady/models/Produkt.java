@@ -1,11 +1,14 @@
 package com.example.sklady.models;
 
+import com.example.sklady.enums.enumSklad;
+
 public class Produkt {
-    private String id;
+    private final String id;
     private String nazev;
     private String kategorie;
     private float cena;
     private int mnozstvi;
+    private enumSklad sklad;
 
     public Produkt(String id, String nazev, String kategorie, float cena, int mnozstvi) {
         this.id = id;
@@ -17,10 +20,6 @@ public class Produkt {
 
     public String getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getNazev() {
@@ -53,5 +52,13 @@ public class Produkt {
 
     public void setMnozstvi(int mnozstvi) {
         this.mnozstvi = mnozstvi;
+    }
+
+    public enumSklad getSklad() {
+        return sklad;
+    }
+
+    public void setSklad(enumSklad sklad) {
+        this.sklad = sklad;
     }
 }
